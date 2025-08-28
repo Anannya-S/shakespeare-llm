@@ -9,7 +9,8 @@ The resulting model is exported to **Ollama** for efficient local inference, and
 
 ### Fine-tuning
 - Used **Unsloth** to fine-tune a base model on a Shakespeare-style dataset.  
-- Dataset consisted of **prompt–response pairs** in Elizabethan English.  
+- Dataset consisted of **prompt–response pairs** in Elizabethan English.
+- The fine-tuning Jupyter notebook may not render directly on GitHub due to widget metadata issues. You can simply download the notebook and open it locally in Jupyter/Colab to view and run it.
 
 ### Deployment
 - Converted the fine-tuned model into **Ollama’s Modelfile format**.  
