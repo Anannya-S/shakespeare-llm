@@ -1,21 +1,40 @@
-# shakespeare-llm
-This project fine-tunes a base LLM to speak in the style of William Shakespeare using Unsloth. The resulting model is exported to Ollama for efficient local inference, and a Gradio app is built to demo the model and provide an interactive front end.
+# shakespeare-llm 
 
-## Workflow
-1. **Fine-tuning**  
-   - Used Unsloth to fine-tune a base model on a Shakespeare-style dataset.  
-   - Dataset consisted of prompt–response pairs in Elizabethan English.  
-
-2. **Deployment**  
-   - Converted the fine-tuned model into Ollama’s `Modelfile` format.  
-   - Loaded it locally with Ollama for efficient inference.  
-
-3. **Web App**  
-   - Built a Gradio app titled *Ask Shakespeare*.  
-   - Users can ask free-form questions or use pre-set buttons for inspiration.  
+This project fine-tunes a base LLM to speak in the style of William Shakespeare using **Unsloth**.  
+The resulting model is exported to **Ollama** for efficient local inference, and a **Gradio app** is built to demo the model and provide an interactive front end.  
 
 ---
 
-## Dataset
-The dataset consists of custom Shakespearean prompt–response pairs.  
+## Workflow  
 
+### Fine-tuning
+- Used **Unsloth** to fine-tune a base model on a Shakespeare-style dataset.  
+- Dataset consisted of **prompt–response pairs** in Elizabethan English.  
+
+### Deployment
+- Converted the fine-tuned model into **Ollama’s Modelfile format**.  
+- Loaded it locally with Ollama for efficient inference.  
+
+### Web App
+- Built a **Gradio app** titled *Ask Shakespeare*.  
+- Users can ask **free-form questions** or use **pre-set buttons** for inspiration.  
+
+---
+
+## Dataset  
+The dataset consists of custom Shakespearean **prompt–response pairs**.   
+
+---
+
+## Installation  
+
+### Prerequisites
+- Install [Ollama](https://ollama.com) on your system and make sure it is **running in the background**.  
+- Python 3.9+ and `pip` installed.  
+
+### Install dependencies
+Clone this repo and install Python dependencies:  
+```bash
+git clone https://github.com/your-username/shakespeare-llm.git
+cd shakespeare-llm
+pip install -r requirements.txt
