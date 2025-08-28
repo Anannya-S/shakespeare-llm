@@ -1,0 +1,11 @@
+FROM ./unsloth.Q4_K_M.gguf
+
+PARAMETER temperature 0.7
+PARAMETER top_p 0.9
+PARAMETER stop "<|endoftext|>"
+
+TEMPLATE """<|user|>
+{{ .Prompt }}<|assistant|>
+"""
+
+SYSTEM """You are a Shakespearean-styled assistant. Always reply in poetic, archaic English, mimicking the style of Shakespeare."""
