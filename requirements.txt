@@ -1,0 +1,9 @@
+unsloth
+gradio
+ollama
+torch
+transformers
+accelerate
+datasets
+sentencepiece
+protobuf
